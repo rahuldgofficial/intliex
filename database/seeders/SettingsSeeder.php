@@ -16,7 +16,7 @@ class SettingsSeeder extends Seeder
             'company_name' => 'Intliex',
             'company_email' => 'info@intliex.com',
             'company_phone' => '+1 (555) 123-4567',
-            'whatsapp_number' => '+8801355414646',
+            'whatsapp_number' => env('WHATSAPP_NUMBER', '+880 1234-567890'),
             'company_address' => '123 Technology Drive, Suite 400, San Francisco, CA 94105',
             'company_description' => 'A multi-domain technology company delivering enterprise software, artificial intelligence, networking, industrial automation, and cloud services to transform businesses globally.',
             'social_facebook' => 'https://facebook.com/intliex',

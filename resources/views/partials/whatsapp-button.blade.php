@@ -1,5 +1,5 @@
 @php
-    $rawNumber = \App\Models\Setting::get('whatsapp_number') ?: '+8801355414646';
+    $rawNumber = \App\Models\Setting::get('whatsapp_number') ?: env('WHATSAPP_NUMBER', '+880 1234-567890');
     $cleanNumber = preg_replace('/[^0-9]/', '', $rawNumber);
     $starterMessage = "Hi, I'm interested in learning more about IntliEx's services.";
     $whatsappUrl = 'https://wa.me/' . $cleanNumber . '?text=' . rawurlencode($starterMessage);

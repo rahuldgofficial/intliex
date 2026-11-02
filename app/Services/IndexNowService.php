@@ -7,8 +7,14 @@ use Illuminate\Support\Facades\Log;
 
 class IndexNowService
 {
-    protected string $key = 'c96a7516805141efae8da87c10d3a5a7';
-    protected string $host = 'intliex.com';
+    protected string $key;
+    protected string $host;
+
+    public function __construct()
+    {
+        $this->key = config('services.indexnow.key') ?? env('INDEXNOW_KEY', 'your-indexnow-key');
+        $this->host = config('services.indexnow.host') ?? env('INDEXNOW_HOST', 'intliex.com');
+    }
     
     public function submitUrl(string $url): bool
     {

@@ -11,10 +11,10 @@ class SettingController extends Controller
     public function index()
     {
         $settings = [
-            'contact_address' => Setting::get('contact_address', 'Block C House 111 Road 8 Dhaka Banani 1212, Bangladesh'),
+            'contact_address' => Setting::get('contact_address', '123 Technology Drive, Suite 400, San Francisco, CA 94105'),
             'contact_email' => Setting::get('contact_email', 'info@intliex.com'),
-            'contact_phone' => Setting::get('contact_phone', '+880 1234-567890'),
-            'whatsapp_number' => Setting::get('whatsapp_number', '+8801355414646'),
+            'contact_phone' => Setting::get('contact_phone', '+1 (555) 123-4567'),
+            'whatsapp_number' => Setting::get('whatsapp_number', env('WHATSAPP_NUMBER', '+880 1234-567890')),
             'contact_hours' => Setting::get('contact_hours', 'Sun-Thu: 9:00 AM - 6:00 PM (BDT)'),
             'contact_map_query' => Setting::get('contact_map_query', 'Block C House 111 Road 8 Dhaka Banani 1212, Bangladesh'),
             'social_linkedin' => Setting::get('social_linkedin', 'https://linkedin.com/company/intliex'),

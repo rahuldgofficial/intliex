@@ -32,8 +32,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
                 <label class="block text-sm font-medium text-slate-700 mb-1">WhatsApp Number</label>
-                <input type="text" name="whatsapp_number" class="form-input w-full" value="{{ $settings['whatsapp_number'] ?? '+8801355414646' }}" placeholder="+8801355414646">
-                <p class="text-xs text-slate-500 mt-1">Used for the floating WhatsApp click-to-chat button. Supports formatting like +880 1355-414646 or plain digits.</p>
+                <input type="text" name="whatsapp_number" class="form-input w-full" value="{{ $settings['whatsapp_number'] ?? '+880 1234-567890' }}" placeholder="+880 1234-567890">
+                <p class="text-xs text-slate-500 mt-1">Used for the floating WhatsApp click-to-chat button. Supports formatting like +880 1234-567890 or plain digits.</p>
             </div>
             <div>
                 <label class="block text-sm font-medium text-slate-700 mb-1">Business Hours</label>
